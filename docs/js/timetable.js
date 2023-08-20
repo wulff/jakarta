@@ -7,7 +7,7 @@ async function get_schedule(d3, parseTime, route) {
     return;
   }
 
-  const data = await d3.tsv('/data/' + route +'.tsv');
+  const data = await d3.tsv('./data/' + route +'.tsv');
 
   const stations = data.columns
     .filter(key => /^stop\|/.test(key))

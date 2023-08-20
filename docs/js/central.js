@@ -1,7 +1,7 @@
 import * as gtfs from './common.js';
 
 async function get_schedule(d3, parseTime) {
-  const data = await d3.tsv('/data/central.tsv');
+  const data = await d3.tsv('./data/central.tsv');
 
   const stations = data.columns
     .filter(key => /^stop\|/.test(key))
