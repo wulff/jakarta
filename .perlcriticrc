@@ -1,0 +1,20 @@
+severity = 1
+verbose  = 4
+
+[CodeLayout::RequireTidyCode]
+perltidyrc = ./.perltidyrc
+
+[ControlStructures::ProhibitPostfixControls]
+allow = if
+
+[Documentation::PodSpelling]
+stop_words_file = stopwords.txt
+
+[InputOutput::RequireCheckedSyscalls]
+exclude_functions = print say
+
+[ValuesAndExpressions::ProhibitMagicNumbers]
+allowed_values = 0 1 2 3 4 5 6 7
+
+[-InputOutput::RequireBriefOpen]
+[-Modules::RequireVersionVar]

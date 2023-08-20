@@ -1,0 +1,8 @@
+# Make perltidy play nice with perlcritic
+-enc=utf8
+-eos
+
+# Formatting rules
+--indent-columns=2
+--maximum-line-length=128
+--break-at-old-comma-breakpoints

@@ -1,0 +1,26 @@
+body {
+  margin: 1rem;
+  padding: 0;
+}
+
+h1, nav {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#schedule {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#schedule svg {
+  min-width: 70rem;
+}
+
+footer {
+  font-family: sans-serif;
+  font-size: .8rem;
+}

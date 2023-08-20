@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>S-tog – alle linjer</title>
+  <meta name="description" content="Marey's trains, S-tog edition">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>S-tog – den centrale strækning
+  </header>
+  <nav>
+    <select id="direction">
+      <option value="n">Mod nord</option>
+      <option value="s">Mod syd</option>
+      <option value="either">Begge retninger</option>
+    </select>
+
+    <select id="days">
+      <option value="weekday">Hverdage</option>
+      <option value="saturday">Lørdag</option>
+      <option value="sunday">Søndag</option>
+    </select>
+  </nav>
+  <div id="schedule"></div>
+
+  <footer>
+    Baseret på <a href="https://help.rejseplanen.dk/hc/da/articles/214174565-ReST-API-Stoppestedsdata-GTFS">GTFS-data</a> fra <a href="https://rejseplanen.dk/">Rejseplanen</a> udgivet under en <a href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons BY-ND 3.0 licens</a>.
+    Baseret på <a href="https://observablehq.com/@d3/mareys-trains">Marey's Trains</a> af <a href="https://observablehq.com/@mbostock">Mike Bostock</a> udgivet under en <a href="https://choosealicense.com/licenses/isc/">ISC licens</a>.
+  </footer>
+
+  <script src="js/d3.v7.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script type="module" src="js/common.js"></script>
+  <script type="module" src="js/central.js"></script>
+</body>
+
+</html>
