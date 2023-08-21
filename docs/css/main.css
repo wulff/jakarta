@@ -18,6 +18,7 @@ h1 {
 
 #schedule svg {
   min-width: 70rem;
+  width: 100%;
 }
 
 footer {
